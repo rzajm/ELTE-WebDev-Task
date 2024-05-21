@@ -18,9 +18,13 @@
       </div>
     </div>
     <h2>Add a Recipe</h2>
+    <br />
+    <br />
     <p>
       Please fill out the form below to submit your recipe. We will review it
       and add it to our collection of recipes. Thank you for sharing!
+      <br />
+      <br />
     </p>
 
     <form action="submit_recipe.php" method="post">
@@ -31,6 +35,7 @@
         <label for="email">E-mail Address:</label>
         <input type="email" id="email" name="email" required /><br /><br />
       </fieldset>
+      <br />
       <fieldset>
         <legend>Details of Recipe</legend>
         <label for="recipe_name">Name of the Recipe:</label>
@@ -41,11 +46,11 @@
           required
         /><br /><br />
         <label for="cook_time">How many minutes will it take to prepare?</label>
-        <select name="cook_time" id="prepareTime">
-          <option value="">Under 5 minutes</option>
-          <option value="">5-10 minutes</option>
-          <option value="">10-20 minutes</option>
-          <option value="">Over 20 minutes</option>
+        <select name="cook_time" id="cook_time">
+          <option value="under_5">Under 5 minutes</option>
+          <option value="5_10">5-10 minutes</option>
+          <option value="10_20">10-20 minutes</option>
+          <option value="over_20">Over 20 minutes</option>
         </select>
         <br /><br />
         <label for="serving_size">How many people is the recipe for?</label>
@@ -59,14 +64,17 @@
         <textarea id="steps" name="steps" rows="4" cols="50" required></textarea
         ><br /><br />
       </fieldset>
+      <br />
       <fieldset>
         <legend>Send</legend>
         <input type="submit" value="Submit" />
         <input type="reset" value="Reset" />
         <br />
+        <br />
         <input type="checkbox" name="subscribe" value="yes" /> I'd like to
         subscribe to a newsletter
       </fieldset>
+      <br />
     </form>
     <div class="footer">
       <h4>Contact Information:</h4>
