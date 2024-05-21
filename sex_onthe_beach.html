@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="coctail.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="Recipes.html">Recipes</a></li>
+          <li><a href="Add_A_Recipe.html">Add a recipe</a></li>
+          <li><a href="About_us.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="header">
+        <h1>Sex on the beach</h1>
+      </div>
+
+      <div class="main">
+        <div class="box img">
+          <img src="s_beach.jpg" alt="image" width="400px" height="200px" />
+        </div>
+
+        <div class="box table">
+          <table>
+            <tr>
+              <th>Kcal: 92</th>
+              <th>Fat: 0g</th>
+            </tr>
+            <tr>
+              <td>Saturates: 0g</td>
+              <td>Carbs: 8g</td>
+            </tr>
+            <tr>
+              <td>Sugars: 8g</td>
+              <td>Fibre: 0.1g</td>
+            </tr>
+            <tr>
+              <td>Protein: 1g</td>
+              <td>Salt: 0g</td>
+            </tr>
+          </table>
+        </div>
+
+        <fieldset class="box about">
+          <legend>About</legend>
+          <p>
+            The Sex on the Beach cocktail is a popular mixed drink known for its
+            fruity and refreshing taste. It typically combines vodka, peach
+            schnapps, orange juice, and cranberry juice, creating a colorful and
+            flavorful beverage. The cocktail is often served over ice in a
+            highball glass, garnished with a slice of orange or a cherry. Its
+            name evokes images of sandy shores and tropical getaways, making it
+            a favorite among those looking for a fun and summery drink option.
+          </p>
+        </fieldset>
+
+        <div class="box empty"></div>
+
+        <fieldset class="box ingredients">
+          <legend>Ingredients</legend>
+          <ul>
+            <li>25ml peach schnapps</li>
+            <li>ice</li>
+            <li>50ml vodka</li>
+            <li>2 oranges, juiced, plus 2 slices to garnish</li>
+            <li>50ml cranberry juice</li>
+            <li>glacé cherries, to garnish (optional)</li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="box whattodo">
+          <legend>What to do?</legend>
+          <ul>
+            <li>
+              Fill two tall glasses with ice cubes. Pour the vodka, peach
+              schnapps and fruit juices into a large jug and stir.
+            </li>
+            <li>
+              Divide the mixture between the two glasses and stir gently to
+              combine. Garnish with the cocktail cherries and orange slices.
+            </li>
+          </ul>
+        </fieldset>
+
+        <div class="box video">
+          <video src="s_beach.mp4" controls poster="s_beach.jpg"></video>
+        </div>
+
+        <div class="box empty"></div>
+        <form action="submit_recipe.php" method="post">
+          <fieldset class="box rate">
+            <legend>How would you rate the recipe?</legend>
+            <input type="radio" name="rating" value="1" /> 1 (Undrinkable)<br />
+            <input type="radio" name="rating" value="2" /> 2<br />
+            <input type="radio" name="rating" value="3" /> 3<br />
+            <input type="radio" name="rating" value="4" /> 4<br />
+            <input type="radio" name="rating" value="5" /> 5 (Delicious)
+            <br />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="footer">
+        <h5>
+          Contact Information:
+          <pre>
+
+Phone: +36 20 567 13 62                                        Email: rzajanmohammadi@gmail.com                                        Instagram: canmrza</pre
+          >
+        </h5>
+      </div>
+    </div>
+  </body>
+</html>

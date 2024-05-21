@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("background2.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav ul li {
+  margin-right: 20px;
+}
+
+.nav ul li a {
+  display: block;
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: bold;
+  margin: 20px 0 60px 60px;
+}
+
+p {
+  margin: 10px 60px;
+}
+
+form {
+  margin: 20px;
+}
+
+fieldset {
+  border: 2px solid white;
+  padding: 10px;
+  margin-bottom: 30px;
+  width: 90%;
+  margin-left: 40px;
+}
+
+legend {
+  margin-left: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  width: 40%;
+  padding: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: 2px solid white;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: white;
+  color: black;
+}
+
+.footer {
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  border: 3px solid rgb(77, 152, 33);
+}
+
+.contact-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.contact-list li {
+  margin: 0 20px;
+}
+
+.contact-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="coctail.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="Recipes.html">Recipes</a></li>
+          <li><a href="Add_A_Recipe.html">Add a recipe</a></li>
+          <li><a href="About_us.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="header">
+        <h1>Bloody Mary</h1>
+      </div>
+
+      <div class="main">
+        <div class="box img">
+          <img src="marry.jpg" alt="image" width="400px" height="200px" />
+        </div>
+
+        <div class="box table">
+          <table>
+            <tr>
+              <th>Kcal: 160</th>
+              <th>Fat: 0g</th>
+            </tr>
+            <tr>
+              <td>Saturates: 0g</td>
+              <td>Carbs: 8g</td>
+            </tr>
+            <tr>
+              <td>Sugars: 8g</td>
+              <td>Fibre: 2g</td>
+            </tr>
+            <tr>
+              <td>Protein: 2g</td>
+              <td>Salt: 2.8g</td>
+            </tr>
+          </table>
+        </div>
+
+        <fieldset class="box about">
+          <legend>About</legend>
+          <p>
+            The Bloody Mary cocktail is a classic and iconic drink known for its
+            bold and savory flavor profile. It typically consists of vodka,
+            tomato juice, Worcestershire sauce, hot sauce, and various spices
+            such as black pepper, celery salt, and horseradish. The cocktail is
+            often garnished with a stalk of celery, a wedge of lemon, and
+            sometimes other items like olives or pickles. With its unique blend
+            of ingredients, the Bloody Mary is a popular choice for brunch or as
+            a hangover cure due to its tangy and invigorating taste.
+          </p>
+        </fieldset>
+
+        <div class="box empty"></div>
+
+        <fieldset class="box ingredients">
+          <legend>Ingredients</legend>
+          <ul>
+            <li>large handful of ice</li>
+            <li>100ml vodka</li>
+            <li>500ml tomato juice</li>
+            <li>1 tbsp lemon juice, plus 2 slices to serve</li>
+            <li>few shakes Worcestershire sauce</li>
+            <li>few shakes Tabasco (smoked Tabasco is nice)</li>
+            <li>pinch celery salt</li>
+            <li>pinch black pepper</li>
+            <li>2 celery sticks, to serve</li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="box whattodo">
+          <legend>What to do?</legend>
+          <ul>
+            <li>
+              Place the ice in a large jug. Measure the vodka, tomato juice and
+              lemon juice and pour it straight onto the ice.
+            </li>
+            <li>
+              Add 3 shakes of Worcestershire sauce and Tabasco (or more if you
+              like it very spicy) and a pinch of celery salt and pepper. Stir
+              until the outside of the jug feels cold, then strain the cocktail
+              into 2 tall glasses.
+            </li>
+            <li>
+              Top up with fresh ice, add a celery stick and lemon slice to both
+              glasses and enjoy.
+            </li>
+          </ul>
+        </fieldset>
+
+        <div class="box video">
+          <video src="BMary.mp4" controls poster="marry.jpg"></video>
+        </div>
+        <div class="box empty"></div>
+        <form action="submit_recipe.php" method="post">
+          <fieldset class="box rate">
+            <legend>How would you rate the recipe?</legend>
+            <input type="radio" name="rating" value="1" /> 1 (Undrinkable)<br />
+            <input type="radio" name="rating" value="2" /> 2<br />
+            <input type="radio" name="rating" value="3" /> 3<br />
+            <input type="radio" name="rating" value="4" /> 4<br />
+            <input type="radio" name="rating" value="5" /> 5 (Delicious)
+            <br />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="footer">
+        <h5>
+          Contact Information:
+          <pre>
+
+Phone: +36 20 567 13 62                                        Email: rzajanmohammadi@gmail.com                                        Instagram: canmrza</pre
+          >
+        </h5>
+      </div>
+    </div>
+  </body>
+</html>

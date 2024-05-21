@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="coctail.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="Recipes.html">Recipes</a></li>
+          <li><a href="Add_A_Recipe.html">Add a recipe</a></li>
+          <li><a href="About_us.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="header">
+        <h1>Espresso Martini</h1>
+      </div>
+
+      <div class="main">
+        <div class="box img">
+          <img
+            src="espresso_martini.jpg"
+            alt="image"
+            width="400px"
+            height="200px"
+          />
+        </div>
+
+        <div class="box table">
+          <table>
+            <tr>
+              <th>Kcal: 258</th>
+              <th>Fat: 0.1g</th>
+            </tr>
+            <tr>
+              <td>Saturates: 0g</td>
+              <td>Carbs: 26g</td>
+            </tr>
+            <tr>
+              <td>Sugars: 25g</td>
+              <td>Fibre: 0g</td>
+            </tr>
+            <tr>
+              <td>Protein: 0.1g</td>
+              <td>Salt: 0.02g</td>
+            </tr>
+          </table>
+        </div>
+
+        <fieldset class="box about">
+          <legend>About</legend>
+          <p>
+            The Espresso Martini is a sophisticated cocktail that combines the
+            rich flavors of coffee with the smoothness of vodka and a hint of
+            sweetness. It's made with vodka, coffee liqueur (such as Kahlúa),
+            freshly brewed espresso, and sometimes a touch of simple syrup for
+            sweetness. The ingredients are typically shaken with ice until well
+            chilled and strained into a martini glass. The Espresso Martini
+            offers a perfect balance of bold coffee flavor with the kick of
+            alcohol, making it a popular choice for those looking for a
+            caffeinated twist on a classic cocktail.
+          </p>
+        </fieldset>
+
+        <div class="box empty"></div>
+
+        <fieldset class="box ingredients">
+          <legend>Ingredients</legend>
+          <ul>
+            <li>100g golden caster sugar</li>
+            <li>ice</li>
+            <li>100ml vodka</li>
+            <li>50ml freshly brewed espresso coffee</li>
+            <li>50ml coffee liqueur</li>
+            <li>4 coffee beans (optional)</li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="box whattodo">
+          <legend>What to do?</legend>
+          <ul>
+            <li>
+              Start by making the sugar syrup. Put the caster sugar in a small
+              pan over a medium heat and pour in 50ml water. Stir, and bring to
+              the boil.
+            </li>
+            <li>
+              Turn off the heat and allow the mixture to cool. Put 2 martini
+              glasses in the fridge to chill.
+            </li>
+            <li>
+              Once the sugar syrup is cold, pour 1 tbsp into a cocktail shaker
+              along with a handful of ice, the vodka, espresso and coffee
+              liqueur. Shake until the outside of the cocktail shaker feels icy
+              cold.
+            </li>
+            <li>
+              Strain into the chilled glasses. Garnish each one with coffee
+              beans if you like.
+            </li>
+          </ul>
+        </fieldset>
+
+        <div class="box video">
+          <video
+            src="espresso_martini.mp4"
+            controls
+            poster="espresso_martini.jpg"
+          ></video>
+        </div>
+
+        <div class="box empty"></div>
+        <form action="submit_recipe.php" method="post">
+          <fieldset class="box rate">
+            <legend>How would you rate the recipe?</legend>
+            <input type="radio" name="rating" value="1" /> 1 (Undrinkable)<br />
+            <input type="radio" name="rating" value="2" /> 2<br />
+            <input type="radio" name="rating" value="3" /> 3<br />
+            <input type="radio" name="rating" value="4" /> 4<br />
+            <input type="radio" name="rating" value="5" /> 5 (Delicious)
+            <br />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="footer">
+        <h5>
+          Contact Information:
+          <pre>
+
+Phone: +36 20 567 13 62                                        Email: rzajanmohammadi@gmail.com                                        Instagram: canmrza</pre
+          >
+        </h5>
+      </div>
+    </div>
+  </body>
+</html>

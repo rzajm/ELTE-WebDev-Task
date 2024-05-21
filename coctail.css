@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("background2.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav ul li {
+  margin-right: 20px;
+}
+
+.nav ul li a {
+  display: block;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 20px 0px 30px 100px;
+}
+
+.main {
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.box {
+  width: 60%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: rgb(112, 107, 107);
+}
+
+legend {
+  margin-left: 1rem;
+}
+
+.box p {
+  padding: 10px;
+}
+
+.box ul {
+  padding: 10px;
+  margin: 7px 15px;
+}
+
+/* .box video {
+  height: 200px;
+} */
+video {
+  height: 275px;
+}
+.box input {
+  padding: auto;
+  margin: 7px 15px;
+}
+
+.footer {
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  border: 3px solid rgb(77, 152, 33);
+}
+
+.contact-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.contact-list li {
+  margin: 0 100px;
+}
+
+.contact-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
