@@ -119,3 +119,146 @@ input[type="reset"]:hover {
 .contact-list a:hover {
   text-decoration: underline;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .nav ul {
+    justify-content: center;
+  }
+
+  .nav ul li {
+    margin-right: 10px;
+  }
+
+  h2 {
+    margin: 20px 0 20px 20px;
+  }
+
+  fieldset {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 80%;
+  }
+
+  .contact-list {
+    flex-direction: column;
+  }
+
+  .contact-list li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav ul li {
+    margin: 10px 0;
+  }
+
+  h2 {
+    margin: 20px 0 20px 10px;
+  }
+
+  form {
+    margin: 10px;
+  }
+
+  fieldset {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 90%;
+  }
+
+  .footer {
+    margin: 10px;
+    padding: 10px;
+    border-width: 2px;
+  }
+
+  .contact-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-list li {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav ul li {
+    margin: 5px 0;
+  }
+
+  h2 {
+    margin: 10px;
+    font-size: 24px;
+  }
+
+  form {
+    margin: 10px 5px;
+  }
+
+  fieldset {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 95%;
+  }
+
+  .footer {
+    margin: 5px;
+    padding: 5px;
+    border-width: 1px;
+  }
+
+  .contact-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-list li {
+    margin: 5px 0;
+  }
+}
