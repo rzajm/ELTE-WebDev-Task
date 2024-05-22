@@ -4,93 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add a Recipe</title>
-    <link rel="stylesheet" href="add.css" />
+    <link rel="stylesheet" href="add.css" id="light-style" />
+    <link rel="stylesheet" href="add-dark.css" id="dark-style" disabled />
+    <script src="toggle.js" defer></script>
   </head>
   <body>
     <div class="container">
-      <div class="nav">
-        <ul>
-          <li><a href="index.html">Homepage</a></li>
-          <li><a href="Recipes.html">Recipes</a></li>
-          <li><a href="Add_A_Recipe.html">Add a recipe</a></li>
-          <li><a href="About_us.html">About Us</a></li>
-        </ul>
-      </div>
-    </div>
-    <h2>Add a Recipe</h2>
-    <br />
-    <br />
-    <p>
-      Please fill out the form below to submit your recipe. We will review it
-      and add it to our collection of recipes. Thank you for sharing!
-      <br />
-      <br />
-    </p>
+      <header>
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="Recipes.html">Recipes</a></li>
+            <li><a href="Add_A_Recipe.html">Add a recipe</a></li>
+            <li><a href="About_us.html">About Us</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <form action="submit_recipe.php" method="post">
-      <fieldset>
-        <legend>Personal Information</legend>
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required /><br /><br />
-        <label for="email">E-mail Address:</label>
-        <input type="email" id="email" name="email" required /><br /><br />
-      </fieldset>
-      <br />
-      <fieldset>
-        <legend>Details of Recipe</legend>
-        <label for="recipe_name">Name of the Recipe:</label>
-        <input
-          type="text"
-          id="recipe_name"
-          name="recipe_name"
-          required
-        /><br /><br />
-        <label for="cook_time">How many minutes will it take to prepare?</label>
-        <select name="cook_time" id="cook_time">
-          <option value="under_5">Under 5 minutes</option>
-          <option value="5_10">5-10 minutes</option>
-          <option value="10_20">10-20 minutes</option>
-          <option value="over_20">Over 20 minutes</option>
-        </select>
-        <br /><br />
-        <label for="serving_size">How many people is the recipe for?</label>
-        <input
-          type="number"
-          id="serving_size"
-          name="serving_size"
-          required
-        /><br /><br />
-        <label for="steps">The Steps of Making the Recipe:</label><br />
-        <textarea id="steps" name="steps" rows="4" cols="50" required></textarea
-        ><br /><br />
-      </fieldset>
-      <br />
-      <fieldset>
-        <legend>Send</legend>
-        <input type="submit" value="Submit" />
-        <input type="reset" value="Reset" />
-        <br />
-        <br />
-        <input type="checkbox" name="subscribe" value="yes" /> I'd like to
-        subscribe to a newsletter
-      </fieldset>
-      <br />
-    </form>
-    <div class="footer">
-      <h4>Contact Information:</h4>
-      <ul class="contact-list">
-        <li>
-          <a href="https://www.instagram.com/canmrza/">Instagram: canmrza</a>
-        </li>
-        <li>
-          <a href="mailto:rzajanmohammadi@gmail.com"
-            >Email: rzajanmohammadi@gmail.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+36205671362">Phone: +36 20 567 13 62</a>
-        </li>
-      </ul>
+      <main>
+        <section>
+          <h2>Add a Recipe</h2>
+          <p>
+            Please fill out the form below to submit your recipe. We will review
+            it and add it to our collection of recipes. Thank you for sharing!
+          </p>
+
+          <form action="submit_recipe.php" method="post">
+            <fieldset>
+              <legend>Personal Information</legend>
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" name="name" required /><br /><br />
+              <label for="email">E-mail Address:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+              /><br /><br />
+            </fieldset>
+            <br />
+            <fieldset>
+              <legend>Details of Recipe</legend>
+              <label for="recipe_name">Name of the Recipe:</label>
+              <input
+                type="text"
+                id="recipe_name"
+                name="recipe_name"
+                required
+              /><br /><br />
+              <label for="cook_time"
+                >How many minutes will it take to prepare?</label
+              >
+              <select name="cook_time" id="cook_time">
+                <option value="under_5">Under 5 minutes</option>
+                <option value="5_10">5-10 minutes</option>
+                <option value="10_20">10-20 minutes</option>
+                <option value="over_20">Over 20 minutes</option>
+              </select>
+              <br /><br />
+              <label for="serving_size"
+                >How many people is the recipe for?</label
+              >
+              <input
+                type="number"
+                id="serving_size"
+                name="serving_size"
+                required
+              /><br /><br />
+              <label for="steps">The Steps of Making the Recipe:</label><br />
+              <textarea
+                id="steps"
+                name="steps"
+                rows="4"
+                cols="50"
+                required
+              ></textarea
+              ><br /><br />
+            </fieldset>
+            <br />
+            <fieldset>
+              <legend>Send</legend>
+              <input type="submit" value="Submit" />
+              <input type="reset" value="Reset" />
+              <br />
+              <br />
+              <input type="checkbox" name="subscribe" value="yes" /> I'd like to
+              subscribe to a newsletter
+            </fieldset>
+            <br />
+          </form>
+        </section>
+      </main>
+
+      <aside>
+        <h3>Did you know?</h3>
+        <p>Adding a pinch of salt to sweet recipes can enhance the flavor.</p>
+      </aside>
+
+      <footer class="footer">
+        <h4>Contact Information:</h4>
+        <ul class="contact-list">
+          <li>
+            <a href="https://www.instagram.com/canmrza/">Instagram: canmrza</a>
+          </li>
+          <li>
+            <a href="mailto:rzajanmohammadi@gmail.com"
+              >Email: rzajanmohammadi@gmail.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+36205671362">Phone: +36 20 567 13 62</a>
+          </li>
+        </ul>
+      </footer>
     </div>
+    <button onclick="toggleStylesheet()">Toggle Dark Mode</button>
   </body>
 </html>

@@ -6,10 +6,12 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url("background2.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: #333;
   color: white;
+}
+
+.nav {
+  background-color: #444;
 }
 
 .nav ul {
@@ -39,43 +41,63 @@ h2 {
   margin: 20px 0 60px 60px;
 }
 
-.recipe-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin: 0 60px;
+p {
+  margin: 10px 60px;
 }
 
-.recipe-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
+form {
+  margin: 20px;
+}
+
+fieldset {
+  border: 2px solid white;
   padding: 10px;
+  margin-bottom: 30px;
+  width: 90%;
+  margin-left: 40px;
+  background-color: #444;
 }
 
-.recipe-item img {
+legend {
+  margin-left: 10px;
+  color: #ddd;
+}
+
+label {
+  display: inline-block;
   width: 200px;
-  height: auto;
-  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #ddd;
 }
 
-.recipe-item a {
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  width: 40%;
+  padding: 5px;
+  background-color: #555;
   color: white;
-  text-decoration: none;
+  border: 1px solid #777;
 }
 
-.recipe-item p {
-  font-size: 18px;
-  margin: 0 0 10px 0;
+input[type="submit"],
+input[type="reset"] {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: 2px solid white;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
-.promo {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 10px;
-  border-radius: 10px;
-  flex: 1;
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: white;
+  color: black;
 }
 
 .footer {
@@ -83,6 +105,7 @@ h2 {
   text-align: center;
   padding: 20px;
   border: 3px solid rgb(77, 152, 33);
+  background-color: #444;
 }
 
 .contact-list {
@@ -120,18 +143,21 @@ h2 {
     margin: 20px 0 20px 20px;
   }
 
-  .recipe-list {
-    margin: 0 20px;
+  fieldset {
+    width: 90%;
+    margin-left: 5%;
   }
 
-  .recipe-item {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .recipe-item img {
+  label {
     width: 100%;
-    max-width: 300px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 80%;
   }
 
   .contact-list {
@@ -157,16 +183,25 @@ h2 {
     margin: 20px 0 20px 10px;
   }
 
-  .recipe-list {
-    margin: 0 10px;
+  form {
+    margin: 10px;
   }
 
-  .promo {
-    padding: 10px;
+  fieldset {
+    width: 100%;
+    margin-left: 0;
   }
 
-  .recipe-item img {
-    max-width: 100%;
+  label {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 90%;
   }
 
   .footer {
@@ -200,22 +235,25 @@ h2 {
     font-size: 24px;
   }
 
-  .recipe-list {
-    margin: 0 5px;
+  form {
+    margin: 10px 5px;
   }
 
-  .recipe-item {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .recipe-item img {
+  fieldset {
     width: 100%;
-    max-width: 200px;
+    margin-left: 0;
   }
 
-  .promo {
-    padding: 5px;
+  label {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 95%;
   }
 
   .footer {
